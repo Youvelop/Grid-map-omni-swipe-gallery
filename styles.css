@@ -1,0 +1,28 @@
+.gallery-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc; /* Placeholder for artwork */
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item.active {
+    opacity: 1;
+}
